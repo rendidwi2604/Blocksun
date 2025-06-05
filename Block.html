@@ -29,26 +29,31 @@
   <body>
     <!-- Navbar -->
 
-    <header
-      class="bg-transparent fixed top-0 w-full z-50 backdrop-blur-md py-6"
-    >
-      <div class="container mx-auto flex items-center justify-between px-4">
-        <h1
-          class="text-3xl font-bold bg-gradient-to-r from-yellow-900 via-yellow-600 to-yellow-400 text-transparent bg-clip-text hover:cursor-pointer"
-        >
-          BlockSun
-        </h1>
+  <header class="bg-transparent fixed top-0 w-full z-50 backdrop-blur-md py-6">
+  <div class="container mx-auto flex items-center justify-between px-4">
+    
+    <!-- Logo + Teks BlockSun sejajar -->
+    <div class="flex items-center space-x-4">
+      <img class=" w-10 h-10" src="img/logo.png" alt="Logo" />
+      <h1 class="text-3xl font-bold bg-gradient-to-r from-yellow-900 via-yellow-600 to-yellow-400 text-transparent bg-clip-text hover:cursor-pointer">
+        BlockSun
+      </h1>
+    </div>
 
-        <nav class="ml-auto">
-          <ul
-            class="flex decoration-none text-white text-2xl font-medium space-x-3"
-          >
-                   <li class="hover:text-slate-700 cursor-pointer px-7"><a href="About.html">About</a></li>
-            <li class="hover:text-slate-700 cursor-pointer"><a href="Contact.html">Contact us</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <!-- Navbar -->
+    <nav class="ml-auto">
+      <ul class="flex decoration-none text-white text-2xl font-medium space-x-3">
+        <li class="hover:text-slate-700 cursor-pointer px-7">
+          <a href="About.html">About</a>
+        </li>
+        <li class="hover:text-slate-700 cursor-pointer">
+          <a href="Contact.html">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
     <!-- Sidebar + Konten  -->
     <div class="flex min-h-screen">
       <!-- Side Bar -->
@@ -85,8 +90,9 @@
       >
       <h1 class="text-white text-2xl font-semibold py-10">Pengenalan Blockchain</h1>
         <p  class="text-white">
-         <strong class="text-yellow-300 hover:text-yellow-500">&emsp;Blockchain</strong> <span class="bg-emerald-200 text-black rounded">adalah teknologi buku besar digital terdistribusi yang memungkinkan data disimpan secara aman, transparan, dan tidak dapat diubah tanpa persetujuan jaringan. </span><img class="float-left w-48 rounded p-3 transition-transform duration-300 ease-in-out hover:scale-200" src="img/Block1.png" alt="">Setiap data dicatat dalam blok yang saling terhubung secara kriptografis. Teknologi ini mendasari mata uang kripto seperti Bitcoin, tetapi penerapannya meluas ke banyak sektor seperti keuangan, logistik, kesehatan, dan bahkan pemerintahan. Keunggulan blockchain adalah desentralisasi—tidak ada pihak tunggal yang mengendalikan sistem—dan sifatnya yang transparan, karena semua transaksi dapat diverifikasi oleh publik atau jaringan yang berizin.
+         <strong class="text-yellow-300 hover:text-yellow-500">&emsp;Blockchain</strong> <span class="bg-emerald-300 text-black rounded">adalah teknologi buku besar digital terdistribusi yang memungkinkan data disimpan secara aman, transparan, dan tidak dapat diubah tanpa persetujuan jaringan. </span><img class="float-left w-48 rounded p-3 transition-transform duration-300 ease-in-out hover:scale-200" src="img/Block1.png" alt="">Setiap data dicatat dalam blok yang saling terhubung secara kriptografis. Teknologi ini mendasari mata uang kripto seperti Bitcoin, tetapi penerapannya meluas ke banyak sektor seperti keuangan, logistik, kesehatan, dan bahkan pemerintahan. Keunggulan blockchain adalah desentralisasi—tidak ada pihak tunggal yang mengendalikan sistem—dan sifatnya yang transparan, karena semua transaksi dapat diverifikasi oleh publik atau jaringan yang berizin.
         </p>
+        <video src="/img/blockvid.mp4" autoplay class="mx-auto py-5"></video>
         
         <h1 class="text-white text-2xl font-semibold py-10">Sejarah Blockchain</h1>
         <p  class="text-white pb-12">
@@ -103,7 +109,7 @@
 
 <h1 class="text-2xl font-semibold text-white py-5">Bagaimana Cara Kerja Blockchain?</h1>
         <p class="text-white pb-1">
-Blockchain bekerja melalui sistem peer-to-peer dan konsensus, dengan langkah-langkah umum seperti:
+ <strong class="text-yellow-300 hover:text-yellow-500">&emsp;Blockchain</strong>  bekerja melalui sistem peer-to-peer dan konsensus, dengan langkah-langkah umum seperti:
  <ul class="text-white pb-9">
   <img class="float-left w-48 rounded p-3 transition-transform duration-300 ease-in-out hover:scale-200" src="img/blk.jpg" alt="">
 
@@ -145,7 +151,7 @@ Untuk menghindari potensi masalah hukum, pihak ketiga yang tepercaya harus menga
     <p  class="text-white">
        <strong class="text-yellow-300 hover:text-yellow-500">&emsp;Blockchain</strong> adalah teknologi baru yang diadopsi secara inovatif oleh berbagai industri. Kami menjelaskan beberapa kasus penggunaan di industri yang berbeda dalam subbagian berikut: <br>
 
-<strong class="font-poppins bg-yellow-500 rounded text-white">Energi</strong><br>
+<strong class="font-poppins bg-yellow-500 rounded font-semibold text-black px-2">Energi</strong><br>
 <ul class="text-white ">Perusahaan energi menggunakan teknologi blockchain untuk menciptakan platform perdagangan energi peer-to-peer dan menyederhanakan akses ke energi yang dapat diperbarui. Sebagai contoh, bisa dilihat di penggunaan berikut: 
 <li>
   <br>
@@ -157,29 +163,78 @@ Untuk menghindari potensi masalah hukum, pihak ketiga yang tepercaya harus menga
 <br>
 </p>
 <p class="text-white">
-<strong class="font-poppins bg-yellow-500 rounded text-white">Keuangan</strong><br>
+<strong class="font-poppins bg-yellow-500 rounded font-semibold text-black px-2">Keuangan</strong><br>
 Dengan inisiatif crowdfunding berbasis blockchain, pengguna dapat mensponsori dan memiliki panel surya di masyarakat yang kekurangan akses energi. Sponsor juga dapat menyewakan panel surya untuk masyarakat ini setelah dibangun.  
 
 Sistem keuangan tradisional, seperti bank dan bursa saham, menggunakan layanan blockchain untuk mengelola pembayaran, akun, dan perdagangan pasar online. Misalnya,<a class="text-blue-400 hover:text-yellow-300" href="https://aws.amazon.com/solutions/"> Singapore Exchange Limited</a>, sebuah perusahaan induk investasi yang menyediakan layanan perdagangan keuangan di seluruh Asia, menggunakan teknologi blockchain untuk membangun akun pembayaran antar bank yang lebih efisien. Dengan mengadopsi blockchain, Singapore Exchange Limited memecahkan beberapa kesulitan, termasuk pemrosesan batch dan rekonsiliasi manual dari beberapa ribu transaksi keuangan. <br>
-<strong class="font-poppins bg-yellow-500 rounded text-white">Retail</strong><br>
+<strong class="font-poppins bg-yellow-500 rounded font-semibold text-black px-2">Retail</strong><br>
 
 Perusahaan di media dan hiburan menggunakan sistem blockchain untuk mengelola data hak cipta. Verifikasi hak cipta sangat penting untuk kompensasi yang adil bagi artis. Dibutuhkan beberapa transaksi untuk mencatat penjualan atau transfer konten hak cipta. <a href="https://www.forbes.com/sites/amazonwebservices/2019/11/19/how-sony-is-protecting-rights-of-digital-creators-using-blockchain-on-aws/" class="text-blue-400 hover:text-yellow-300" >Sony Music Entertainment Japan</a>  menggunakan layanan blockchain untuk menjadikan manajemen hak digital lebih efisien. Sony Music Entertainment Japan telah berhasil menggunakan strategi blockchain untuk meningkatkan produktivitas dan mengurangi biaya dalam pemrosesan hak cipta.
 
 <h1 class="text-white text-2xl font-semibold py-10">Apa saja fitur teknologi blockchain?</h1>
 
 </p>
-<p class="text-white">Teknologi blockchain memiliki fitur utama sebagai berikut:
+<img class="float-none w-100 rounded p-3 transition-transform duration-300 ease-in-out hover:scale-200" src="img/FiturBc.png" alt="">
+<p class="text-white">Teknologi blockchain memiliki fitur utama sebagai berikut: <br>
 
-Desentralisasi
-Desentralisasi dalam blockchain mengacu pada kontrol transfer dan pengambilan keputusan dari entitas terpusat (individu, organisasi, atau grup) ke jaringan terdistribusi. Jaringan blockchain yang terdesentralisasi menggunakan transparansi untuk mengurangi kebutuhan akan kepercayaan di antara para peserta. Jaringan ini juga menghalangi peserta untuk tidak menggunakan otoritas atau kontrol satu sama lain dengan cara yang dapat menurunkan fungsionalitas jaringan.
+  
+  <strong class="font-poppins bg-yellow-500 rounded font-semibold text-black px-2">Desentralisasi</strong><br>
+<span class="bg-emerald-300 text-black rounded">Desentralisasi dalam blockchain mengacu pada kontrol transfer dan pengambilan keputusan dari entitas terpusat (individu, organisasi, atau grup) ke jaringan terdistribusi.</span>  Jaringan blockchain yang terdesentralisasi menggunakan transparansi untuk mengurangi kebutuhan akan kepercayaan di antara para peserta. Jaringan ini juga menghalangi peserta untuk tidak menggunakan otoritas atau kontrol satu sama lain dengan cara yang dapat menurunkan fungsionalitas jaringan. <br>
 
-Ketetapan
-Ketetapan berarti sesuatu yang tidak dapat diubah atau ditukar. Tidak ada peserta yang dapat mengutak-atik transaksi setelah dicatat ke buku besar bersama. Jika catatan transaksi berisi kesalahan, Anda harus menambahkan transaksi baru untuk membalikkan kesalahan tersebut, dan kedua transaksi tersebut dapat dilihat oleh jaringan.
+<strong class="font-poppins bg-yellow-500 rounded font-semibold text-black px-2">Ketetapan</strong><br>
+<span class="bg-emerald-300 text-black rounded">Ketetapan berarti sesuatu yang tidak dapat diubah atau ditukar.</span>
+ Tidak ada peserta yang dapat mengutak-atik transaksi setelah dicatat ke buku besar bersama. Jika catatan transaksi berisi kesalahan, Anda harus menambahkan transaksi baru untuk membalikkan kesalahan tersebut, dan kedua transaksi tersebut dapat dilihat oleh jaringan. <br>
 
-Konsensus
-Sistem blockchain menetapkan aturan mengenai persetujuan peserta untuk mencatat transaksi. Anda dapat mencatat transaksi baru hanya jika mayoritas peserta dalam jaringan memberikan persetujuan mereka.</p>
+<strong class="font-poppins bg-yellow-500 rounded font-semibold text-black px-2">Konsensus</strong><br>
+<span class="bg-emerald-300 text-black rounded">Sistem blockchain menetapkan aturan mengenai persetujuan peserta untuk mencatat transaksi.</span>
+ Anda dapat mencatat transaksi baru hanya jika mayoritas peserta dalam jaringan memberikan persetujuan mereka. <br>
+<strong class="font-poppins bg-yellow-500 rounded font-semibold text-black px-2">Transparansi</strong><br>
+<span class="bg-emerald-300 text-black rounded">Transparansi pada blockchain berarti semua transaksi atau data yang tercatat bisa dilihat oleh siapa saja di jaringan.</span>
+ Karena datanya tersimpan di banyak node dan tidak bisa diubah tanpa persetujuan mayoritas, ini membuat sistem lebih terbuka, bisa diaudit, dan sulit dimanipulasi.
+<h1 class="text-white text-2xl font-semibold py-10">Apa saja komponen utama dari teknologi blockchain?</h1>
+</p>
+
+<p class="text-white">Arsitektur blockchain memiliki komponen utama berikut :  <br>
+<strong class="font-poppins bg-yellow-500 rounded font-semibold text-black px-2">Buku besar terdistribusi</strong><br>
 
 
+Buku besar terdistribusi adalah basis data bersama di jaringan blockchain yang menyimpan transaksi, seperti file bersama yang dapat diedit oleh semua orang dalam tim. Di sebagian besar editor teks bersama, setiap pihak yang memiliki hak pengeditan dapat menghapus seluruh file. Namun, teknologi buku besar terdistribusi memiliki aturan ketat mengenai pihak yang dapat mengedit dan cara mengeditnya. Anda tidak dapat menghapus entri setelah dicatat. <br>
+
+<strong class="font-poppins bg-yellow-500 rounded font-semibold text-black px-2">Kontrak pintar</strong><br>
+
+Perusahaan menggunakan kontrak pintar untuk mengelola kontrak bisnis mandiri tanpa perlu bantuan pihak ketiga. Kontrak pintar adalah program yang disimpan di sistem blockchain yang berjalan secara otomatis ketika kondisi yang telah ditentukan terpenuhi. Kontrak pintar menjalankan pemeriksaan “jika-maka” sehingga transaksi dapat diselesaikan dengan penuh keyakinan. Misalnya, perusahaan logistik dapat memiliki kontrak cerdas yang melakukan pembayaran secara otomatis setelah barang tiba di pelabuhan. <br>
+<strong class="font-poppins bg-yellow-500 rounded font-semibold text-black px-2">Kriptografi kunci publik</strong><br>
+
+
+
+Kriptografi kunci publik adalah fitur keamanan untuk mengidentifikasi peserta secara unik dalam jaringan blockchain. Mekanisme ini menghasilkan dua set kunci untuk anggota jaringan. Salah satu kunci adalah kunci publik yang umum untuk semua orang di jaringan. Kunci yang lainnya adalah kunci privat yang unik untuk setiap anggota. Kunci privat dan publik bekerja sama untuk membuka kunci data dalam buku besar. 
+
+Misalnya, John dan Jill adalah dua anggota jaringan. John mencatat transaksi yang dienkripsi dengan kunci privatnya. Jill dapat mendekripsinya dengan kunci publiknya. Dengan cara ini, Jill yakin bahwa John telah melakukan transaksi. Kunci publik Jill tidak akan berfungsi jika kunci privat John telah dirusak.
+<h1 class="text-white text-2xl font-semibold py-10">Apa saja tipe-tipe jaringan blockchain?</h1>
+</p>
+<p class="text-white pb-5">
+  Ada empat tipe utama jaringan terdesentralisasi atau terdistribusi di blockchain:
+<img class="float-left w-100 rounded p-3 transition-transform duration-300 ease-in-out hover:scale-200" src="img/typeBc.jpeg" alt="">
+  <br>
+<strong class="font-poppins bg-yellow-500 rounded font-semibold text-black px-2">Jaringan blockchain publik</strong><br>
+
+<strong class="text-yellow-300 hover:text-yellow-500">&emsp;Blockchain</strong>  publik tidak membutuhkan izin dan memungkinkan semua orang untuk dapat bergabung. Semua anggota blockchain memiliki hak yang sama untuk membaca, mengedit, dan memvalidasi blockchain. Orang-orang umumnya menggunakan blockchain publik untuk bertukar dan menambang mata uang kripto seperti Bitcoin, Ethereum, dan Litecoin. 
+
+ <br>
+<strong class="font-poppins bg-yellow-500 rounded font-semibold text-black px-2">Jaringan blockchain privat</strong><br>
+
+Satu organisasi mengontrol blockchain privat, yang juga disebut blockchain terkelola. Otoritas menentukan siapa saja yang dapat menjadi anggota dan hak apa saja yang dimiliki dalam jaringan. <strong class="text-yellow-300 hover:text-yellow-500">Blockchain</strong> privat hanya terdesentralisasi sebagian karena memiliki batasan akses. Ripple, jaringan pertukaran mata uang digital untuk bisnis, adalah contoh dari blockchain privat.
+ <br>
+<strong class="font-poppins bg-yellow-500 rounded font-semibold text-black px-2">Jaringan blockchain hibrida</strong><br>
+
+
+<strong class="text-yellow-300 hover:text-yellow-500">&emsp;Blockchain</strong>  hibrida menggabungkan elemen dari jaringan privat dan publik. Perusahaan dapat mengatur sistem berbasis izin privat bersama dengan sistem publik. Dengan cara ini, perusahaan dapat mengontrol akses ke data tertentu yang disimpan di blockchain sekaligus menjaga data publik lainnya. Perusahaan menggunakan kontrak pintar yang memungkinkan anggota publik untuk memeriksa jika transaksi privat telah selesai. Misalnya, blockchain hibrida dapat memberikan akses publik ke mata uang digital sekaligus menjaga mata uang milik bank tetap privat.
+ <br>
+<strong class="font-poppins bg-yellow-500 rounded font-semibold text-black px-2">Jaringan blockchain konsorsium</strong><br>
+
+
+Sekelompok organisasi mengatur jaringan blockchain konsorsium. Organisasi yang dipilih sebelumnya berbagi tanggung jawab untuk memelihara blockchain dan menentukan hak akses data. Industri yang banyak organisasinya memiliki tujuan bersama dan mendapat manfaat dari tanggung jawab bersama sering kali lebih memilih jaringan blockchain konsorsium. Misalnya, Konsorsium Jaringan Bisnis Pengiriman Global adalah konsorsium blockchain nirlaba yang bertujuan untuk mendigitalkan industri perkapalan dan meningkatkan kolaborasi antaroperator industri maritim.
+</p>
 
 <!-- Button Next -->
  <a href="https://www.blockchain.com/" class="text-white bg-slate-600 p-3 rounded hover:bg-slate-800 hover:text-yellow-300">Website Pendukung-></a>    

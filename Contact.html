@@ -8,19 +8,24 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <!-- Navbar -->
     <header
       class="bg-transparent fixed top-0 w-full z-50 backdrop-blur-md py-6"
     >
       <div class="container mx-auto flex items-center justify-between px-4">
-        <h1
-          class="text-3xl font-bold bg-gradient-to-r from-yellow-900 via-yellow-600 to-yellow-400 text-transparent bg-clip-text hover:cursor-pointer"
-        >
-          BlockSun
-        </h1>
+        <!-- Logo + Teks BlockSun  -->
+        <div class="flex items-center space-x-4">
+          <img class="w-10 h-10" src="img/logo.png" alt="Logo" />
+          <h1
+            class="text-3xl font-bold bg-gradient-to-r from-yellow-900 via-yellow-600 to-yellow-400 text-transparent bg-clip-text hover:cursor-pointer"
+          >
+            BlockSun
+          </h1>
+        </div>
 
+        <!-- Navbar -->
         <nav class="ml-auto">
           <ul
             class="flex decoration-none text-white text-2xl font-medium space-x-3"
@@ -64,19 +69,72 @@
       </aside>
 
       <!-- Konten Contact Us -->
-      <div class="min-h-screen bg-gray-950 pt-32 flex-1 p-6 flex justify-center items-start">
+      <div
+        class="min-h-screen bg-gray-950 pt-32 flex-1 p-6 flex justify-center items-start"
+      >
         <div class="text-white max-w-3xl text-center">
-          <h1 class="text-4xl font-bold text-center underline mb-8">Contact Us</h1>
-          <p class="text-lg leading-10 mb-6">
-            Jika Anda memiliki pertanyaan, saran, atau ingin bekerja sama dengan <span
+          <h1
+            class="text-4xl font-bold text-center underline mb-20 hover:text-yellow-300"
+          >
+            Contact Us
+          </h1>
+          <p class="text-xl leading-10 mb-10">
+            Jika Anda memiliki pertanyaan, saran, atau ingin bekerja sama dengan
+            <span
               class="font-bold bg-gradient-to-r from-yellow-900 via-yellow-600 to-yellow-400 text-transparent bg-clip-text"
-            >BlockSun</span>, jangan ragu untuk menghubungi kami melalui informasi di bawah ini.
+              >BlockSun</span
+            >, jangan ragu untuk menghubungi kami melalui informasi di bawah
+            ini.
           </p>
-          <div class="text-left text-white space-y-4 text-lg">
-            <p><strong>Email:</strong> support@blocksun.io</p>
-            <p><strong>Instagram:</strong> <a href="#" class="text-yellow-400 hover:underline">@blocksun.id</a></p>
-            <p><strong>WhatsApp:</strong> +62 812-3456-7890</p>
-            <p><strong>Alamat:</strong> Jl. Teknologi Blockchain No. 88, Jakarta, Indonesia</p>
+          <div class="text-left text-white space-y-4 text-lg pt-10">
+            <div
+              class="border border-gray-300 rounded-lg p-5 hover:bg-gray-900 shadow-lg hover:shadow-yellow-300"
+            >
+              <p class="flex">
+                <img
+                  class="w-6"
+                  src="img/icon/email-svgrepo-com (2).svg"
+                  alt=""
+                /><strong class="pl-5">Email:</strong> support@blocksun.io
+              </p>
+            </div>
+            <div
+              class="border border-gray-300 rounded-lg p-5 hover:bg-gray-900 shadow-lg hover:shadow-yellow-300"
+            >
+              <p class="flex">
+                <img
+                  class="w-5"
+                  src="img/icon/instagram-svgrepo-com (1).svg"
+                  alt=""
+                />
+                <strong class="pl-5">Instagram:</strong>
+                <a href="#" class="text-yellow-400 hover:underline"
+                  >@blocksun.id</a
+                >
+              </p>
+            </div>
+
+            <div
+              class="border border-gray-300 rounded-lg p-5 hover:bg-gray-900 shadow-lg hover:shadow-yellow-300"
+            >
+              <p class="flex">
+                <img
+                  class="w-6"
+                  src="img/icon/phone-svgrepo-com.svg"
+                  alt=""
+                /><strong class="pl-5">WhatsApp:</strong>
+                +62 812-3456-7890
+              </p>
+            </div>
+            <div
+              class="border border-gray-300 rounded-lg p-5 hover:bg-gray-900 shadow-lg hover:shadow-yellow-300"
+            >
+              <p class="flex">
+                <img class="w-6" src="img/icon/map2.svg" alt="" />
+                <strong class="pl-5">Alamat:</strong> Jl. Teknologi Blockchain
+                No. 88, Jakarta, Indonesia
+              </p>
+            </div>
           </div>
         </div>
       </div>
