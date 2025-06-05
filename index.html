@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @keyframes slideDownFadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-slideDownFadeIn {
+        animation: slideDownFadeIn 1s ease forwards;
+      }
+
+      .text-shadow {
+        text-shadow: 2px 2px 5px rgba(66, 210, 247, 0.425); /* efek glow */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <header
+      class="bg-transparent fixed top-0 w-full z-50 backdrop-blur-md py-6"
+    >
+      <div class="container mx-auto flex items-center justify-between px-4">
+        <h1
+          class="text-3xl font-bold bg-gradient-to-r from-yellow-900 via-yellow-600 to-yellow-400 text-transparent bg-clip-text hover:cursor-pointer"
+        >
+          BlockSun
+        </h1>
+
+        <nav class="ml-auto">
+          <ul
+            class="flex decoration-none text-white text-2xl font-medium space-x-3"
+          >
+            <li class="hover:text-slate-700 cursor-pointer px-7">
+              <a href="About.html">About</a>
+            </li>
+            <li class="hover:text-slate-700 cursor-pointer">
+              <a href="Contact.html">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Sidebar + Konten  -->
+    <div class="flex min-h-screen">
+      <!-- Side Bar -->
+      <aside class="w-100 bg-gray-900 text-white p-6 pt-24">
+        <h2 class="text-2xl font-bold mb-6">Menu</h2>
+        <nav class="flex flex-col gap-4 text-xl">
+          <a href="index.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >Dashboard</a
+          >
+          <a href="Block.html " class="hover:bg-gray-700 rounded px-3 py-2"
+            >Belajar Blockchain</a
+          >
+          <a href="Smart.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >Smart Contract</a
+          >
+          <a href="Crypto.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >Crypto & DeFi</a
+          >
+          <a href="News.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >News</a
+          >
+          <a href="Quis.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >Quis</a
+          >
+        </nav>
+      </aside>
+      <!-- Konten -->
+
+      <div
+        class="font-semibold hero mx-auto max-h-screen bg-gray-950 pt-80 text-7xl text-center"
+      >
+        <h1 class="text-white leading-25 animate-slideDownFadeIn">
+          Welcome To
+          <span
+            class="font-bold bg-gradient-to-r from-yellow-900 via-yellow-600 to-yellow-400 text-transparent bg-clip-text hover:cursor-pointer"
+          >
+            BlockSun
+          </span>
+          Are you ready become to
+          <span class="bg-yellow-300 font-bold text-gray-800 px-1"
+            >Block-chain Developer</span
+          >
+        </h1>
+        <p
+          class="text-white text-xl font-Poppins font-normal pt-10 hover:underline hover:text-blue-400 animate-bounce text-shadow"
+        >
+          Learn from Zero To Hero, we together with you
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

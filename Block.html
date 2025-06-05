@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+      
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    /> 
+    <!-- scriptButton -->
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const backToTopBtn = document.getElementById("backToTopBtn");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.remove("hidden");
+      } else {
+        backToTopBtn.classList.add("hidden");
+      }
+    });
+  });
+</script>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <header
+      class="bg-transparent fixed top-0 w-full z-50 backdrop-blur-md py-6"
+    >
+      <div class="container mx-auto flex items-center justify-between px-4">
+        <h1
+          class="text-3xl font-bold bg-gradient-to-r from-yellow-900 via-yellow-600 to-yellow-400 text-transparent bg-clip-text hover:cursor-pointer"
+        >
+          BlockSun
+        </h1>
+
+        <nav class="ml-auto">
+          <ul
+            class="flex decoration-none text-white text-2xl font-medium space-x-3"
+          >
+                   <li class="hover:text-slate-700 cursor-pointer px-7"><a href="About.html">About</a></li>
+            <li class="hover:text-slate-700 cursor-pointer"><a href="Contact.html">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Sidebar + Konten  -->
+    <div class="flex min-h-screen">
+      <!-- Side Bar -->
+      <aside class="w-64 bg-gray-900 text-white p-6 pt-24  ">
+        <h2 class="text-2xl font-bold mb-6">Menu</h2>
+        <nav class="flex flex-col gap-4 text-xl">
+          <a href="index.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >Dashboard</a
+          >
+          <a href="Block.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >Belajar Blockchain</a
+          >
+          <a href="Smart.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >Smart Contract</a
+          >
+          <a href="Crypto.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >Crypto & DeFi</a
+          >
+          <a href="News.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >News</a
+          >
+          <a href="Quis.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >Quis</a
+          >
+      
+
+
+      </aside>
+      <!-- Konten -->
+     
+
+      <div
+        class="min-h-screen bg-gray-950  pt-10 flex-1 p-12 text-justify leading-10 text-xl"
+      >
+      <h1 class="text-white text-2xl font-semibold py-10">Pengenalan Blockchain</h1>
+        <p  class="text-white">
+         <strong class="text-yellow-300 hover:text-yellow-500">&emsp;Blockchain</strong> <span class="bg-emerald-200 text-black rounded">adalah teknologi buku besar digital terdistribusi yang memungkinkan data disimpan secara aman, transparan, dan tidak dapat diubah tanpa persetujuan jaringan. </span><img class="float-left w-48 rounded p-3 transition-transform duration-300 ease-in-out hover:scale-200" src="img/Block1.png" alt="">Setiap data dicatat dalam blok yang saling terhubung secara kriptografis. Teknologi ini mendasari mata uang kripto seperti Bitcoin, tetapi penerapannya meluas ke banyak sektor seperti keuangan, logistik, kesehatan, dan bahkan pemerintahan. Keunggulan blockchain adalah desentralisasi—tidak ada pihak tunggal yang mengendalikan sistem—dan sifatnya yang transparan, karena semua transaksi dapat diverifikasi oleh publik atau jaringan yang berizin.
+        </p>
+        
+        <h1 class="text-white text-2xl font-semibold py-10">Sejarah Blockchain</h1>
+        <p  class="text-white pb-12">
+         &emsp; Konsep awal <strong class="text-yellow-300 hover:text-yellow-500 ">Blockchain</strong> dimulai pada tahun 1991 oleh Stuart Haber dan W. Scott Stornetta, yang mengusulkan sistem kriptografi untuk mencatat dokumen dengan waktu yang tidak dapat dimanipulasi. Namun, teknologi ini mulai dikenal luas sejak Bitcoin diperkenalkan oleh Satoshi Nakamoto pada tahun 2008 melalui whitepaper berjudul "Bitcoin: A Peer-to-Peer Electronic Cash System". Bitcoin menggunakan blockchain untuk mencatat semua transaksi tanpa perlu perantara seperti bank. Seiring waktu, muncul generasi blockchain berikutnya seperti Ethereum yang memperkenalkan smart contract, memungkinkan otomatisasi dan kompleksitas dalam sistem desentralisasi.</p>
+          <ul class="text-white pb-5" >Tahap  :<li>
+               <span class="bg-yellow-500 rounded">1991</span> – Stuart Haber dan W. Scott Stornetta pertama kali mengusulkan sistem kriptografi untuk mencatat timestamp dokumen.
+          </li>
+          <li>
+               <span class="bg-yellow-500 rounded">2008 </span>– Satoshi Nakamoto (identitas pseudonim) menerbitkan whitepaper Bitcoin: sistem uang elektronik peer-to-peer yang menggunakan blockchain sebagai fondasinya.
+          </li>
+          <li><span class="bg-yellow-500 rounded">2009</span> – Blok pertama Bitcoin (Genesis Block) ditambang, menandai lahirnya jaringan blockchain pertama.</li>
+          <li><span class="bg-yellow-500 rounded">2015</span> – Ethereum dirilis, memperkenalkan konsep smart contract dan memperluas fungsi blockchain di luar uang digital.</li>
+        </ul>
+
+<h1 class="text-2xl font-semibold text-white py-5">Bagaimana Cara Kerja Blockchain?</h1>
+        <p class="text-white pb-1">
+Blockchain bekerja melalui sistem peer-to-peer dan konsensus, dengan langkah-langkah umum seperti:
+ <ul class="text-white pb-9">
+  <img class="float-left w-48 rounded p-3 transition-transform duration-300 ease-in-out hover:scale-200" src="img/blk.jpg" alt="">
+
+  <li>
+1. Transaksi dikirim oleh pengguna ke jaringan.
+  </li>
+  <li>2. Verifikasi dilakukan oleh node (komputer peserta) menggunakan algoritma konsensus (misalnya Proof of Work).</li>
+  <li>3. Blok Baru dibuat berisi transaksi yang valid, ditambahkan ke blockchain.</li>
+  <li>4. Distribusi – salinan blockchain diperbarui dan disebarkan ke seluruh jaringan.</li>
+</ul>
+
+<ul><li>
+<p class="text-white">Setiap blok berisi informasi penting seperti:
+  <ul class="text-white">
+    <li>1. Hash dari blok sebelumnya</li>
+    <li>2. Timestamp (waktu pembuatan blok)</li>
+    <li>3. Data transaksi yang telah diverifikasi</li>
+    <li>4. Nonce (angka yang digunakan dalam proses mining untuk menemukan hash yang valid)</li>
+    </p>
+</li></ul>
+</p>
+<h1 class="text-2xl font-semibold text-white py-5">Bagaimana Cara Kerja Blockchain?</h1>
+ 
+
+
+    
+   
+ <p  class="text-white">
+        
+      &emsp;Teknologi basis data tradisional menghadirkan beberapa tantangan dalam pencatatan transaksi keuangan. Sebagai contoh, bisa dilihat di kasus penjualan properti. Setelah uang dibayarkan, kepemilikan properti dialihkan ke pembeli. Secara individu, baik pembeli maupun penjual dapat mencatat transaksi moneter, tetapi tidak ada sumber yang dapat dipercaya. Penjual dapat dengan mudah mengeklaim bahwa mereka belum menerima uang meskipun sudah menerimanya, dan pembeli dapat sama-sama berargumen bahwa mereka telah membayar uang meskipun belum membayarkannya.
+<br>
+Untuk menghindari potensi masalah hukum, pihak ketiga yang tepercaya harus mengawasi dan memvalidasi transaksi. Kehadiran otoritas pusat ini tidak hanya merumitkan transaksi tetapi juga menciptakan satu titik kelemahan. Jika basis data pusat disusupi, kedua belah pihak akan dirugikan.
+<br>
+ &emsp;<strong class="text-yellow-300 hover:text-yellow-500">&emsp;Blockchain</strong>  mengurangi masalah tersebut dengan menciptakan sistem yang terdesentralisasi dan antirusak untuk mencatat transaksi. Dalam skenario transaksi properti, blockchain membuat buku besar, masing-masing satu untuk pembeli dan penjual. Semua transaksi harus disetujui oleh kedua belah pihak dan secara otomatis diperbarui di kedua buku besar secara waktu nyata. Setiap perubahan dalam transaksi historis akan merusak seluruh buku besar. Properti blockchain ini telah digunakan di berbagai sektor, termasuk pembuatan mata uang digital seperti Bitcoin.
+</p>
+
+<h1 class="text-white text-2xl font-semibold py-10">Bagaimana industri yang berbeda menggunakan blockchain?</h1>
+
+    <p  class="text-white">
+       <strong class="text-yellow-300 hover:text-yellow-500">&emsp;Blockchain</strong> adalah teknologi baru yang diadopsi secara inovatif oleh berbagai industri. Kami menjelaskan beberapa kasus penggunaan di industri yang berbeda dalam subbagian berikut: <br>
+
+<strong class="font-poppins bg-yellow-500 rounded text-white">Energi</strong><br>
+<ul class="text-white ">Perusahaan energi menggunakan teknologi blockchain untuk menciptakan platform perdagangan energi peer-to-peer dan menyederhanakan akses ke energi yang dapat diperbarui. Sebagai contoh, bisa dilihat di penggunaan berikut: 
+<li>
+  <br>
+- Perusahaan energi berbasis blockchain telah menciptakan platform perdagangan untuk penjualan listrik antar individu. Pemilik rumah yang memiliki panel surya menggunakan platform ini untuk menjual kelebihan energi surya mereka ke tetangga. Sebagian besar prosesnya otomatis: pengukur pintar membuat transaksi dan blockchain mencatatnya.
+</li>
+<li>- Dengan inisiatif crowdfunding berbasis blockchain, pengguna dapat mensponsori dan memiliki panel surya di masyarakat yang kekurangan akses energi. Sponsor juga dapat menyewakan panel surya untuk masyarakat ini setelah dibangun.</li>
+
+</ul>
+<br>
+</p>
+<p class="text-white">
+<strong class="font-poppins bg-yellow-500 rounded text-white">Keuangan</strong><br>
+Dengan inisiatif crowdfunding berbasis blockchain, pengguna dapat mensponsori dan memiliki panel surya di masyarakat yang kekurangan akses energi. Sponsor juga dapat menyewakan panel surya untuk masyarakat ini setelah dibangun.  
+
+Sistem keuangan tradisional, seperti bank dan bursa saham, menggunakan layanan blockchain untuk mengelola pembayaran, akun, dan perdagangan pasar online. Misalnya,<a class="text-blue-400 hover:text-yellow-300" href="https://aws.amazon.com/solutions/"> Singapore Exchange Limited</a>, sebuah perusahaan induk investasi yang menyediakan layanan perdagangan keuangan di seluruh Asia, menggunakan teknologi blockchain untuk membangun akun pembayaran antar bank yang lebih efisien. Dengan mengadopsi blockchain, Singapore Exchange Limited memecahkan beberapa kesulitan, termasuk pemrosesan batch dan rekonsiliasi manual dari beberapa ribu transaksi keuangan. <br>
+<strong class="font-poppins bg-yellow-500 rounded text-white">Retail</strong><br>
+
+Perusahaan di media dan hiburan menggunakan sistem blockchain untuk mengelola data hak cipta. Verifikasi hak cipta sangat penting untuk kompensasi yang adil bagi artis. Dibutuhkan beberapa transaksi untuk mencatat penjualan atau transfer konten hak cipta. <a href="https://www.forbes.com/sites/amazonwebservices/2019/11/19/how-sony-is-protecting-rights-of-digital-creators-using-blockchain-on-aws/" class="text-blue-400 hover:text-yellow-300" >Sony Music Entertainment Japan</a>  menggunakan layanan blockchain untuk menjadikan manajemen hak digital lebih efisien. Sony Music Entertainment Japan telah berhasil menggunakan strategi blockchain untuk meningkatkan produktivitas dan mengurangi biaya dalam pemrosesan hak cipta.
+
+<h1 class="text-white text-2xl font-semibold py-10">Apa saja fitur teknologi blockchain?</h1>
+
+</p>
+<p class="text-white">Teknologi blockchain memiliki fitur utama sebagai berikut:
+
+Desentralisasi
+Desentralisasi dalam blockchain mengacu pada kontrol transfer dan pengambilan keputusan dari entitas terpusat (individu, organisasi, atau grup) ke jaringan terdistribusi. Jaringan blockchain yang terdesentralisasi menggunakan transparansi untuk mengurangi kebutuhan akan kepercayaan di antara para peserta. Jaringan ini juga menghalangi peserta untuk tidak menggunakan otoritas atau kontrol satu sama lain dengan cara yang dapat menurunkan fungsionalitas jaringan.
+
+Ketetapan
+Ketetapan berarti sesuatu yang tidak dapat diubah atau ditukar. Tidak ada peserta yang dapat mengutak-atik transaksi setelah dicatat ke buku besar bersama. Jika catatan transaksi berisi kesalahan, Anda harus menambahkan transaksi baru untuk membalikkan kesalahan tersebut, dan kedua transaksi tersebut dapat dilihat oleh jaringan.
+
+Konsensus
+Sistem blockchain menetapkan aturan mengenai persetujuan peserta untuk mencatat transaksi. Anda dapat mencatat transaksi baru hanya jika mayoritas peserta dalam jaringan memberikan persetujuan mereka.</p>
+
+
+
+<!-- Button Next -->
+ <a href="https://www.blockchain.com/" class="text-white bg-slate-600 p-3 rounded hover:bg-slate-800 hover:text-yellow-300">Website Pendukung-></a>    
+</div>
+    </div>
+    <!-- Button -->
+
+
+    
+      <button id="backToTopBtn"
+  onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+  class="hidden fixed bottom-6 right-6 bg-yellow-300 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded shadow-lg z-50 transition-opacity duration-300">
+  Balik Ke atas
+</button>
+  </body>
+</html>

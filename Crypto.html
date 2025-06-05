@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+   <style>
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    animation: marquee 15s linear infinite;
+    width: fit-content;
+  }
+</style>
+
+
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <header
+      class="bg-transparent fixed top-0 w-full z-50 backdrop-blur-md py-6"
+    >
+      <div class="container mx-auto flex items-center justify-between px-4">
+        <h1
+          class="text-3xl font-bold bg-gradient-to-r from-yellow-900 via-yellow-600 to-yellow-400 text-transparent bg-clip-text hover:cursor-pointer"
+        >
+          BlockSun
+        </h1>
+
+        <nav class="ml-auto">
+          <ul
+            class="flex decoration-none text-white text-2xl font-medium space-x-3"
+          >
+                  <li class="hover:text-slate-700 cursor-pointer px-7"><a href="About.html">About</a></li>
+            <li class="hover:text-slate-700 cursor-pointer"><a href="Contact.html">Contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Sidebar + Konten  -->
+    <div class="flex min-h-screen">
+      <!-- Side Bar -->
+      <aside class="w-64 bg-gray-900 text-white p-6 pt-24 ">
+        <h2 class="text-2xl font-bold mb-6">Menu</h2>
+        <nav class="flex flex-col gap-4 text-xl">
+          <a href="index.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >Dashboard</a
+          >
+          <a href="Block.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >Belajar Blockchain</a
+          >
+          <a href="Smart.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >Smart Contract</a
+          >
+          <a href="Crypto.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >Crypto & DeFi</a
+          >
+          <a href="News.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >News</a
+          >
+          <a href="Quis.html" class="hover:bg-gray-700 rounded px-3 py-2"
+            >Quis</a
+          >
+      </aside>
+      <!-- Konten -->
+
+      <div
+        class="min-h-screen bg-gray-950  pt-30 flex-1 p-12 text-justify leading-10 text-xl"
+      >
+      <h1 class="text-white text-2xl font-semibold py-10">Pengenalan Crypto</h1>
+        <p  class="text-white">
+         <strong class="text-violet-300 hover:text-violet-500">Cryptocurrency</strong>  (atau crypto) adalah mata uang digital yang menggunakan teknologi kriptografi untuk mengamankan transaksi dan mengontrol penciptaan unit-unit baru. Tidak seperti mata uang tradisional, crypto tidak dikendalikan oleh pemerintah atau bank sentral, melainkan beroperasi di atas jaringan blockchain yang terdesentralisasi. Contoh paling populer dari cryptocurrency adalah Bitcoin (BTC) dan Ethereum (ETH). Crypto dapat digunakan sebagai alat tukar, penyimpan nilai, bahkan sebagai aset investasi.
+
+
+        </p>
+       <div class="relative overflow-hidden whitespace-nowrap h-20 bg-transparent">
+  <div class="flex animate-marquee px-10">
+    <div class="flex gap-10 px-10">
+      <img class="h-16 rounded-full" src="img/bgb.jpg" alt="">
+      <img class="h-16 rounded-full" src="img/bnb.jpg" alt="">
+      <img class="h-16 rounded-full" src="img/btc.png" alt="">
+      <img class="h-16 rounded-full" src="img/ton.png" alt="">
+      <img class="h-16 rounded-full" src="img/tron.png" alt="">
+      <img class="h-16 rounded-full" src="img/eth.png" alt="">
+      <img class="h-16 rounded-full" src="img/sol.png" alt="">
+    </div>
+    <!-- Duplicate untuk efek loop tanpa jeda -->
+    <div class="flex gap-10 px-10">
+      <img class="h-16 rounded-full" src="img/bgb.jpg" alt="">
+      <img class="h-16 rounded-full" src="img/bnb.jpg" alt="">
+      <img class="h-16 rounded-full" src="img/btc.png" alt="">
+      <img class="h-16 rounded-full" src="img/ton.png" alt="">
+      <img class="h-16 rounded-full" src="img/tron.png" alt="">
+      <img class="h-16 rounded-full" src="img/eth.png" alt="">
+      <img class="h-16 rounded-full" src="img/sol.png" alt="">
+    </div>
+        <div class="flex gap-10 px-10">
+      <img class="h-16 rounded-full" src="img/bgb.jpg" alt="">
+      <img class="h-16 rounded-full" src="img/bnb.jpg" alt="">
+      <img class="h-16 rounded-full" src="img/btc.png" alt="">
+      <img class="h-16 rounded-full" src="img/ton.png" alt="">
+      <img class="h-16 rounded-full" src="img/tron.png" alt="">
+      <img class="h-16 rounded-full" src="img/eth.png" alt="">
+      <img class="h-16 rounded-full" src="img/sol.png" alt="">
+    </div>
+  </div>
+</div>
+
+        
+        <h1 class="text-white text-2xl font-semibold py-10">Apa Itu DeFi (Decentralized Finance)</h1>
+        <p  class="text-white pb-12">
+      <strong class="text-violet-300 hover:text-violet-500">Defi</strong>  adalah singkatan dari Decentralized Finance, yaitu sistem keuangan terbuka yang berjalan di atas blockchain dan menghilangkan peran perantara seperti bank atau lembaga keuangan tradisional. Dengan DeFi, pengguna bisa melakukan aktivitas seperti meminjam uang, memberikan pinjaman, berdagang aset, hingga mendapatkan bunga dari kripto—semua tanpa KYC (verifikasi identitas) dan bisa diakses hanya dengan dompet digital. DeFi biasanya dibangun di atas platform seperti Ethereum dan menggunakan smart contract untuk menjalankan aturan otomatis tanpa harus mempercayai pihak ketiga.</p>
+    
+    <a href="https://indodax.com/academy/crypto-vs-defi/" class="text-white bg-slate-600 p-3 rounded hover:bg-slate-800 hover:text-violet-300">Baca Selengkapnya -></a>    </div>
+
+    </div>
+  </body>
+</html>
