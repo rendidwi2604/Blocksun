@@ -32,14 +32,14 @@
     <!-- Navbar -->
 
     <header
-      class="bg-transparent fixed top-0 w-full z-50 backdrop-blur-md py-6"
+      class="bg-transparent fixed top-0 w-full z-50 backdrop-blur-md border-b-1 border-blue-100/15 py-6"
     >
       <div class="container mx-auto flex items-center justify-between px-4">
         <!-- Logo + Teks BlockSun  -->
         <div class="flex items-center space-x-4">
           <img class="w-10 h-10" src="img/logo.png" alt="Logo" />
           <h1
-            class="text-3xl font-bold bg-gradient-to-r from-yellow-900 via-yellow-600 to-yellow-400 text-transparent bg-clip-text hover:cursor-pointer"
+            class="text-xl font-bold bg-gradient-to-r from-yellow-700 via-yellow-600 to-yellow-400 text-transparent bg-clip-text hover:cursor-pointer"
           >
             BlockSun
           </h1>
@@ -48,7 +48,7 @@
         <!-- Navbar -->
         <nav class="ml-auto">
           <ul
-            class="flex decoration-none text-white text-2xl font-medium space-x-3"
+            class="flex decoration-none text-white text-xl font-medium space-x-3"
           >
             <li class="hover:text-slate-700 cursor-pointer px-7">
               <a href="About.html">About</a>
@@ -63,25 +63,37 @@
     <!-- Sidebar + Konten  -->
     <div class="flex min-h-screen">
       <!-- Side Bar -->
-      <aside class="w-100 bg-gray-900 text-white p-6 pt-24">
-        <h2 class="text-2xl font-bold mb-6">Menu</h2>
-        <nav class="flex flex-col gap-4 text-xl">
-          <a href="index.html" class="hover:bg-gray-700 rounded px-3 py-2"
+      <aside class="w-80 bg-gray-900 text-white p-6 pt-24">
+        <h2 class="text-lg font-bold mb-6">Menu</h2>
+        <nav class="flex flex-col gap-4 text-lg">
+          <a
+            href="index.html"
+            class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
             >Dashboard</a
           >
-          <a href="Block.html " class="hover:bg-gray-700 rounded px-3 py-2"
-            >Belajar Blockchain</a
+          <a
+            href="Block.html "
+            class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
+            >Learn Blockchain</a
           >
-          <a href="Smart.html" class="hover:bg-gray-700 rounded px-3 py-2"
+          <a
+            href="Smart.html"
+            class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
             >Smart Contract</a
           >
-          <a href="Crypto.html" class="hover:bg-gray-700 rounded px-3 py-2"
+          <a
+            href="Crypto.html"
+            class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
             >Crypto & DeFi</a
           >
-          <a href="News.html" class="hover:bg-gray-700 rounded px-3 py-2"
+          <a
+            href="News.html"
+            class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
             >News</a
           >
-          <a href="Quis.html" class="hover:bg-gray-700 rounded px-3 py-2"
+          <a
+            href="Quis.html"
+            class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
             >Quis</a
           >
         </nav>
@@ -89,32 +101,35 @@
       <!-- Konten -->
 
       <div
-        class="relative font-semibold hero mx-auto max-h-screen bg-gray-950 pt-80 text-6xl text-center"
+        class="relative font-semibold hero bg-[url('/img/bg.png')] bg-cover bg-center mx-auto max-h-screen pt-40 text-5xl text-center"
       >
         <h1 class="text-white leading-25 animate-slideDownFadeIn">
           Welcome To
           <span
-            class="font-bold bg-gradient-to-r from-yellow-900 via-yellow-600 to-yellow-400 text-transparent bg-clip-text hover:cursor-pointer"
+            class="font-bold bg-gradient-to-r from-yellow-800 via-yellow-600 to-yellow-400 text-transparent bg-clip-text hover:cursor-pointer"
           >
             BlockSun
           </span>
-          Are you ready become to
-          <span class="bg-yellow-300 font-bold text-gray-800 px-1">
-            Block-chain Developer
+          Are You Ready Become To
+          <span
+            class="bg-yellow-300 rounded-bl font-bold text-gray-800 px-1 hover:scale-150"
+          >
+            Blockchain Learner
           </span>
         </h1>
         <p
-          class="text-white text-xl font-Poppins font-normal pt-10 hover:underline hover:text-blue-400 animate-pulse text-shadow"
+          class="text-white text-sm font-Poppins font-normal pt-2 hover:underline hover:text-blue-400 animate-pulse text-shadow"
         >
-          Learn from Zero To Hero, we together with you
+          Learn From Zero To Hero, We Together With You
         </p>
 
         <!-- IMG di pojok kanan bawah -->
-        <img
-          class="w-24 mr-5 mt-5 p-5 absolute bottom-0 right-0 animate-bounce"
-          src="img/logo.png"
-          alt=""
-        />
+        <a href="About.html"
+          ><img
+            class="w-24 mr-5 mt-5 p-5 absolute bottom-0 right-0 animate-bounce"
+            src="img/logo.png"
+            alt=""
+        /></a>
       </div>
     </div>
   </body>

@@ -8,6 +8,20 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+        <!-- scriptButton -->
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const backToTopBtn = document.getElementById("backToTopBtn");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.remove("hidden");
+      } else {
+        backToTopBtn.classList.add("hidden");
+      }
+    });
+  });
+</script>
   </head>
   <body>
     <!-- Navbar -->
@@ -19,7 +33,7 @@
         <div class="flex items-center space-x-4">
           <img class="w-10 h-10" src="img/logo.png" alt="Logo" />
           <h1
-            class="text-3xl font-bold bg-gradient-to-r from-yellow-900 via-yellow-600 to-yellow-400 text-transparent bg-clip-text hover:cursor-pointer"
+            class="text-xl font-bold bg-gradient-to-r from-yellow-900 via-yellow-600 to-yellow-400 text-transparent bg-clip-text hover:cursor-pointer"
           >
             BlockSun
           </h1>
@@ -28,7 +42,7 @@
         <!-- Navbar -->
         <nav class="ml-auto">
           <ul
-            class="flex decoration-none text-white text-2xl font-medium space-x-3"
+            class="flex decoration-none text-white text-xl font-medium space-x-3"
           >
             <li class="hover:text-slate-700 cursor-pointer px-7">
               <a href="About.html">About</a>
@@ -44,24 +58,24 @@
     <div class="flex min-h-screen">
       <!-- Side Bar -->
       <aside class="w-64 bg-gray-900 text-white p-6 pt-24 ">
-        <h2 class="text-2xl font-bold mb-6">Menu</h2>
-        <nav class="flex flex-col gap-4 text-xl">
-          <a href="index.html" class="hover:bg-gray-700 rounded px-3 py-2"
+        <h2 class="text-xl font-bold mb-6">Menu</h2>
+        <nav class="flex flex-col gap-4 text-lg">
+          <a href="index.html" class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
             >Dashboard</a
           >
-          <a href="Block.html" class="hover:bg-gray-700 rounded px-3 py-2"
+          <a href="Block.html" class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
             >Belajar Blockchain</a
           >
-          <a href="Smart.html" class="hover:bg-gray-700 rounded px-3 py-2"
+          <a href="Smart.html" class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
             >Smart Contract</a
           >
-          <a href="Crypto.html" class="hover:bg-gray-700 rounded px-3 py-2"
+          <a href="Crypto.html" class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
             >Crypto & DeFi</a
           >
-          <a href="News.html" class="hover:bg-gray-700 rounded px-3 py-2"
+          <a href="News.html" class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
             >News</a
           >
-          <a href="Quis.html" class="hover:bg-gray-700 rounded px-3 py-2"
+          <a href="Quis.html" class="hover:bg-gray-700 hover:pl-5 hover:font-semibold  rounded px-3 py-2"
             >Quis</a
           >
       </aside>
@@ -71,15 +85,59 @@
         class="min-h-screen bg-gray-950  pt-30 flex-1 p-12 text-justify leading-10 text-xl"
       >
       <h1 class="text-white text-2xl font-semibold py-10">Pengenalan Smart contract</h1>
-        <p  class="text-white">
-         <strong class="text-emerald-300 hover:text-emerald-500">Smart contract</strong>  adalah program komputer yang secara otomatis mengeksekusi perjanjian ketika syarat-syarat tertentu terpenuhi, tanpa perlu pihak ketiga atau otoritas pusat. <img class="float-left w-48 rounded transition-transform duration-300 ease-in-out p-3 hover:scale-200" src="img/smart.jpg" alt=""> Teknologi ini berjalan di atas jaringan blockchain, yang membuatnya transparan, aman, dan tidak bisa dimodifikasi setelah diterbitkan. Dalam praktiknya, smart contract memungkinkan proses seperti transaksi, pinjaman, atau pertukaran aset digital dilakukan secara otomatis berdasarkan logika yang sudah ditulis dalam kode.   </p>
-        
-        <h1 class="text-white text-2xl font-semibold py-10">Penerapan dan Dampaknya</h1>
+      <video src="/img/Apa Itu Smart Contract.mp4" autoplay class="mx-auto py-5"></video>
+      <p  class="text-white">
+        <strong class="text-emerald-300 hover:text-emerald-500">&emsp;Smart contract</strong>  adalah program komputer yang secara otomatis mengeksekusi perjanjian ketika syarat-syarat tertentu terpenuhi, tanpa perlu pihak ketiga atau otoritas pusat. <img class="float-left w-48 rounded transition-transform duration-300 ease-in-out p-3 hover:scale-200" src="img/smart.jpg" alt=""> Teknologi ini berjalan di atas jaringan blockchain, yang membuatnya transparan, aman, dan tidak bisa dimodifikasi setelah diterbitkan. Dalam praktiknya, smart contract memungkinkan proses seperti transaksi, pinjaman, atau pertukaran aset digital dilakukan secara otomatis berdasarkan logika yang sudah ditulis dalam kode.   </p>
+        <h1 class="text-white text-2xl font-semibold py-10">Contoh dan Penerapan Smart Contract?</h1>
         <p  class="text-white pb-12">
-        <strong class="text-emerald-300 hover:text-emerald-500">Smart contract</strong>   pertama kali dipopulerkan melalui platform Ethereum pada tahun 2015,yang memberikan kemampuan untuk membuat aplikasi terdesentralisasi (dApps). Saat ini, smart contract digunakan dalam berbagai sektor, seperti keuangan terdesentralisasi (DeFi), asuransi, supply chain, dan bahkan voting digital. Karena prosesnya berlangsung tanpa perantara dan berbasis kode, smart contract dapat mengurangi biaya operasional, meningkatkan efisiensi, dan meminimalkan risiko manipulasi atau kesalahan manusia.</p>
-    
-    <a href="https://www.blockchain.com/" class="text-white bg-slate-600 p-3 rounded hover:bg-slate-800 hover:text-emerald-300">Baca Selengkapnya -></a>    </div>
+          <strong class="text-emerald-300 hover:text-emerald-500">&emsp;Smart contract</strong>  Seperti yang dapat Anda bayangkan, ada beberapa contoh dan aplikasi yang telah dikembangkan dengan mempertimbangkan smart contract, beberapa yang paling inovatif adalah: <br><br>
+
+<strong class="bg-emerald-300 rounded text-black">- Outlet Konstruksi </strong> dan waralaba telah mulai menggunakan smart contract blockchain untuk menyelesaikan perselisihan dengan vendor melalui komunikasi waktu nyata dan peningkatan visibilitas transaksi (karena sifat publik dari blockchain) pada rantai pasokan. <br>
+<strong class="bg-emerald-300 rounded text-black">Pusat dan organisasi Keuangan Internasional</strong> menggunakan jaringan blockchain berskala besar dengan kontrak pintar, untuk membangun perdagangan aset keuangan dan uang yang lebih aman, lebih efisien, dan lebih murah. <br>
+<strong class="bg-emerald-300 rounded text-black">Organisasi Perawatan Kesehatan</strong>, di negara-negara yang memiliki fasilitas swasta atau perawatan kesehatan yang disubsidi sebagian, telah mengusulkan penggunaan smart contract untuk menawarkan cara yang lebih cepat dan lebih aman bagi rumah sakit dan perusahaan asuransi untuk berbagi informasi pasien dan mendistribusikan hasil.</p>
+          <h1 class="text-white text-2xl font-semibold py-3">Bagaimana Cara Kerja Smart Contract?</h1>
+          <p class="text-white py-3"><strong class="text-emerald-300 hover:text-emerald-500">&emsp;Smart contract</strong> bekerja dengan memanfaatkan salah satu teknik pemrograman komputer paling sederhana yang diketahui oleh hampir semua pembuat kode dan insinyur perangkat lunak, pernyataan “jika”. Pada dasarnya, pernyataan yang mengikuti logika “jika…maka” dikodekan ke dalam blockchain. Artinya, jaringan komputer akan menjalankan suatu tindakan/transaksi (misalnya, pertukaran pembayaran) “jika” serangkaian tindakan yang telah ditentukan sebelumnya telah terjadi (misalnya, dua pedagang telah mengirimkan transaksi mereka). Blockchain, tempat transaksi ini terjadi, kemudian diperbarui saat transaksi selesai. Sesuai dengan blockchain dan teknologi kriptografinya, ini berarti transaksi tidak dapat diubah dan hanya mereka yang memiliki izin yang dapat melihat hasilnya. Seperti dugaan Anda, kontrak pintar dapat berisi sebanyak mungkin kondisi “jika…maka” yang diperlukan untuk memenuhi kewajiban keamanan transaksi tertentu. Namun, penting untuk memiliki tim pengembang tepercaya dan tata kelola sistem blockchain yang solid secara keseluruhan karena hal ini akan memengaruhi bagaimana smart contract dan jaringan awalnya dibangun dan kemudian dijalankan.</p>
+          
+          <h1 class="text-white text-2xl font-semibold py-3">Apa itu Dapp??</h1>
+          
+          <p class="text-white p-3"><strong class="text-emerald-300"> &emsp;Dapps, atau “dApps”</strong>, didefinisikan lebih tepat sebagai aplikasi terdesentralisasi, adalah program komputer terdistribusi (seringkali sumber terbuka) yang beroperasi dan berjalan pada blockchain atau jaringan peer-to-peer (P2P). Karena sifat operasinya yang terdesentralisasi, mereka tidak dikendalikan oleh satu penulis, perusahaan, atau organisasi saja. Dapps mulai digunakan dan diadopsi oleh sejumlah sektor berbeda, termasuk permainan, perbankan, dan keuangan, karena menawarkan keamanan dan transparansi yang lebih besar. Dapps menggunakan kontrak pintar untuk mengaktifkan fungsinya.</p>
+          
+          <h1 class="text-white text-2xl font-semibold py-3">Bagaimana Cara Kerja Dapps?</h1>
+          <p class="text-white p-3"><strong class="text-emerald-300">&emsp;Dapps</strong> menggunakan <strong class="text-emerald-300">Smart Contract </strong>untuk menjalankan aturan yang telah ditetapkan melalui kode, menghilangkan kebutuhan akan server dan basis data terpusat (menghilangkan risiko kerentanan tunggal dan titik kegagalan). Dengan cara kerja yang sama seperti aplikasi perangkat lunak konvensional, Dapps menggunakan kode front-end untuk melakukan panggilan ke back-end, tetapi dalam kasus ini, back-end bergantung pada jaringan blockchain atau P2P, yang pada dasarnya terdiri dari kontrak pintar, yang memungkinkan fungsionalitas aplikasi. Singkatnya, smart contract memungkinkan ujung depan Dapp berkomunikasi dengan ujung belakangnya pada blockchain.
+            
+          </p>
+          
+          <h1 class="text-white text-2xl font-semibold py-3">Jenis-jenis Dapps</h1>
+          <p class="text-white py-3">&emsp;Sejumlah jenis <strong class="text-emerald-300">Dapps</strong> telah dikembangkan untuk mendesentralisasikan fungsi tertentu dan menghilangkan perantara. Meskipun tidak digunakan secara luas, Dapps telah diintegrasikan ke dalam browser web untuk berfungsi sebagai plugin guna menayangkan iklan, melacak perilaku pengguna, atau meminta sumbangan “kripto”.
+            
+            Beberapa contoh Dapps paling populer yang telah dikembangkan, atau sedang dikembangkan, meliputi: <br><br>
+            
+            
+            <strong class="bg-emerald-300 rounded  text-black">Layanan keuangan</strong>: seperti yang telah diperkirakan sebelumnya, Dapps dibuat untuk memfasilitasi transaksi keuangan, seperti pertukaran mata uang atau aset. <br>
+            <strong class="bg-emerald-300 rounded text-black">Perumahan</strong>: teknologi terdesentralisasi telah dikembangkan untuk memangkas biaya transaksi saat membeli properti. Dapps juga dibuat untuk membantu pelacakan kepemilikan properti dan dokumentasi, seperti akta. <br>
+            <strong class="bg-emerald-300 rounded text-black">Rantai Pasokan</strong>: Dapps digunakan untuk meningkatkan transparansi dan akuntabilitas dengan melacak barang secara otomatis melalui rantai pasokan internasional. <br>
+            <strong class="bg-emerald-300 rounded text-black">Pendidikan</strong>: Salah satu usulan penggunaan Dapps adalah di sektor pendidikan sebagai cara untuk menciptakan platform pembelajaran terdesentralisasi, yang memungkinkan siswa dan pendidik berinteraksi dan berkolaborasi secara langsung. <br>
+            <strong class="bg-emerald-300 rounded text-black">Keamanan Siber dan Verifikasi Identitas</strong>: aplikasi terdesentralisasi telah diambil oleh sektor keamanan siber sebagai cara potensial untuk menyimpan dan memverifikasi informasi identitas dengan aman. Faktanya, pada masa-masa awal teknologi blockchain, banyak yang menganggap teknologi buku besar terdistribusi sebagai kemungkinan batas baru untuk keamanan siber secara umum. Akan tetapi, karena sifatnya yang intensif komputasi, cara lain menjadi lebih diminati. <br>
+            <strong class="bg-emerald-300 rounded text-black">Perawatan Kesehatan</strong>: seperti yang kami sebutkan di atas, Dapps (melalui smart contract) ideal untuk menyimpan dan melacak catatan perawatan kesehatan, terutama dalam lingkungan internasional. <br>
+            <strong class="bg-emerald-300 rounded text-black">NFT</strong>: sejumlah Dapps juga digunakan untuk menyediakan pasar terdesentralisasi untuk perdagangan NFT. Banyak penggemar lebih memilih Dapps karena manfaat transparansi dan keamanan dalam penggunaan teknologi blockchain untuk berdagang.</p>
+            
+            <h1 class="text-white text-2xl font-semibold py-3">Manfaat Smart Contract?</h1>
+            <p class="text-white py-5 "><img class="float mx-auto w-60 rounded transition-transform duration-300 ease-in-out p-1 hover:scale-200" src="img/smrt.png" alt="">
+&emsp;Ada sejumlah manfaat dalam penggunaan smart contract di lanskap digital saat ini, manfaat utamanya adalah kontrak pintar cenderung: <br> <br>
+
+<strong class="bg-emerald-300 rounded text-black">Efisien</strong>: karena smart contract sepenuhnya digital dan dipicu secara otomatis, mereka menghindari proses yang mahal dan panjang, seperti pengisian dokumen secara manual dan manajemen kesalahan.
+Aman: karena smart contract ada di blockchain, catatan dan transaksi dienkripsi, bertanggung jawab kepada semua pihak lain di rantai tersebut, dan tidak dapat diubah (artinya pemrograman tidak dapat diubah). <br>
+<strong class="bg-emerald-300 rounded text-black">Transparan</strong>: seperti yang disebutkan di atas, berdasarkan sifat bekerja pada buku besar/jaringan yang terdesentralisasi, semua peserta dalam rantai memiliki akses ke transaksi yang dilakukan oleh setiap smart contract. Hal ini membuat semua anggota proses bertanggung jawab kepada semua pihak lain yang terlibat.</p>
+            
+        <!-- Refresensi -->
+    <a href="https://www.blockchain.com/" class="text-white bg-slate-600 p-3 rounded hover:bg-slate-800 hover:text-emerald-300">Website Pendukung -></a>    </div>
+
 
     </div>
+     <button id="backToTopBtn"
+  onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+  class="hidden fixed bottom-6 right-6 bg-yellow-300 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded shadow-lg z-50 transition-opacity duration-300">
+  Balik Ke atas
+</button>
   </body>
 </html>
