@@ -9,12 +9,13 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-     <header
+  <body class="bg-gray-950 text-white">
+    <!-- Navbar -->
+    <header
       class="bg-transparent fixed top-0 w-full z-50 backdrop-blur-md py-6"
     >
       <div class="container mx-auto flex items-center justify-between px-4">
-        <!-- Logo + Teks BlockSun  -->
+        <!-- Logo + Teks -->
         <div class="flex items-center space-x-4">
           <img class="w-10 h-10" src="img/logo.png" alt="Logo" />
           <h1
@@ -23,85 +24,95 @@
             BlockSun
           </h1>
         </div>
-
         <!-- Navbar -->
         <nav class="ml-auto">
-          <ul
-            class="flex decoration-none text-white text-xl font-medium space-x-3"
-          >
-            <li class="hover:text-slate-700 cursor-pointer px-7">
+          <ul class="flex text-white text-xl font-medium space-x-3">
+            <li class="hover:text-slate-400 cursor-pointer px-7">
               <a href="About.html">About</a>
             </li>
-            <li class="hover:text-slate-700 cursor-pointer">
-              <a href="Contact.html">Contact us</a>
+            <li class="hover:text-slate-400 cursor-pointer">
+              <a href="Contact.html">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <!-- Sidebar + Konten  -->
-    <div class="flex min-h-screen">
-      <!-- Side Bar -->
-      <aside class="w-64 bg-gray-900 text-white p-6 pt-24 ">
+
+    <!-- Sidebar + Konten -->
+    <div class="flex min-h-screen pt-28">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-gray-900 text-white p-6">
         <h2 class="text-xl font-bold mb-6">Menu</h2>
         <nav class="flex flex-col gap-4 text-lg">
-          <a href="index.html" class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
+          <a
+            href="index.html"
+            class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
             >Dashboard</a
           >
-          <a href="Block.html" class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
+          <a
+            href="Block.html"
+            class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
             >Belajar Blockchain</a
           >
-          <a href="Smart.html" class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
+          <a
+            href="Smart.html"
+            class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
             >Smart Contract</a
           >
-          <a href="Crypto.html" class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
+          <a
+            href="Crypto.html"
+            class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
             >Crypto & DeFi</a
           >
-          <a href="News.html" class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
+          <a
+            href="News.html"
+            class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
             >News</a
           >
-          <a href="Quis.html" class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
-            >Quis</a
+          <a
+            href="Quis.html"
+            class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
+            >Partner</a
           >
+        </nav>
       </aside>
-      <!-- Konten -->
 
-    <div class="max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow-md space-y-6  bg-gray-950">
-  <!-- Upload File -->
-  <div class="pt-20">
-    <label for="fileInput" class="block text-sm font-medium text-gray-700 mb-2">Upload File</label>
-    <input
-      type="file"
-      id="fileInput"
-      class="block w-full text-sm text-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500"
-      onchange="displayFileName()"
-    />
-  </div>
+      <!-- Konten Partnership -->
+      <main class="flex-1 p-10">
+        <div class="max-w-4xl mx-auto bg-gray-800 rounded-xl shadow-lg p-10">
+          <h2 class="text-3xl font-bold text-yellow-400 mb-6 text-center">
+            Partner With BlockSun
+          </h2>
+          <p class="text-lg text-gray-300 leading-relaxed mb-6 text-center">
+            We believe in the power of collaboration to build a decentralized
+            future. If you're a project, community, or institution aligned with
+            the Web3 mission — let's work together!
+          </p>
 
-  <!-- Textarea to display file path -->
-  <div>
-    <label for="filePath" class="block text-sm font-medium text-gray-700 mb-2">File Path</label>
-    <textarea
-      id="filePath"
-      rows="2"
-      class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-yellow-500 focus:outline-none"
-      placeholder="Path file akan muncul di sini..."
-      readonly
-    ></textarea>
-  </div>
-</div>
+          <div class="flex flex-col md:flex-row items-center gap-10 mb-8">
+            <img
+              src="img/sponsorShip.png"
+              alt="Partnership"
+              class="rounded-lg w-full md:w-1/2 shadow-md hover:scale-150"
+            />
+            <ul class="text-gray-300 text-base space-y-3">
+              <li>🤝 Joint Web3 Workshops & Events</li>
+              <li>🎓 Co-branded Educational Programs</li>
+              <li>🚀 Community Growth Campaigns</li>
+              <li>💼 Talent Development & Internships</li>
+            </ul>
+          </div>
 
-<!-- Script -->
-<script>
-  function displayFileName() {
-    const fileInput = document.getElementById("fileInput");
-    const textArea = document.getElementById("filePath");
-
-    if (fileInput.files.length > 0) {
-      textArea.value = fileInput.files[0].name; // bisa pakai .path jika local, .name untuk nama file
-    }
-  }
-</script>
-
+          <div class="text-center">
+            <a
+              href="mailto:partnership@blocksun.id"
+              class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 px-6 rounded-lg transition duration-300"
+            >
+              Contact Us to Collaborate
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

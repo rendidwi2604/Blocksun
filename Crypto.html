@@ -16,9 +16,24 @@
 
   .animate-marquee {
     animation: marquee 15s linear infinite;
-    width: fit-content;
+  width: fit-content;
+  will-change: transform;
   }
 </style>
+<!-- scriptButton -->
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const backToTopBtn = document.getElementById("backToTopBtn");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.remove("hidden");
+      } else {
+        backToTopBtn.classList.add("hidden");
+      }
+    });
+  });
+</script>
 
 
   </head>
@@ -76,13 +91,13 @@
             >News</a
           >
           <a href="Quis.html" class="hover:bg-gray-700 hover:pl-5 hover:font-semibold rounded px-3 py-2"
-            >Quis</a
+            >Partner</a
           >
       </aside>
       <!-- Konten -->
 
       <div
-        class="min-h-screen bg-gray-950  pt-30 flex-1 p-12 text-justify leading-10 text-xl"
+        class="min-h-screen bg-gray-950  pt-30 flex-1 p-12 text-justify  leading-10 text-xl"
       >
       <h1 class="text-white text-2xl font-semibold py-10">Pengenalan Crypto</h1>
         <p  class="text-white">
@@ -120,16 +135,80 @@
       <img class="h-16 rounded-full" src="img/eth.png" alt="">
       <img class="h-16 rounded-full" src="img/sol.png" alt="">
     </div>
+  
   </div>
+
 </div>
 
         
         <h1 class="text-white text-2xl font-semibold py-10">Apa Itu DeFi (Decentralized Finance)</h1>
-        <p  class="text-white pb-12">
-      <strong class="text-violet-300 hover:text-violet-500">Defi</strong>  adalah singkatan dari Decentralized Finance, yaitu sistem keuangan terbuka yang berjalan di atas blockchain dan menghilangkan peran perantara seperti bank atau lembaga keuangan tradisional. Dengan DeFi, pengguna bisa melakukan aktivitas seperti meminjam uang, memberikan pinjaman, berdagang aset, hingga mendapatkan bunga dari kripto—semua tanpa KYC (verifikasi identitas) dan bisa diakses hanya dengan dompet digital. DeFi biasanya dibangun di atas platform seperti Ethereum dan menggunakan smart contract untuk menjalankan aturan otomatis tanpa harus mempercayai pihak ketiga.</p>
-    
+        <p  class="text-white pb-5">
+          <img class="float-left w-48 rounded p-3 transition-transform duration-300 ease-in-out hover:scale-200" src="img/defi.jpeg" alt="">
+
+          <strong class="text-violet-300 hover:text-violet-500">&emsp;Defi</strong>  adalah singkatan dari Decentralized Finance, yaitu sistem keuangan terbuka yang berjalan di atas blockchain dan menghilangkan peran perantara seperti bank atau lembaga keuangan tradisional. Dengan DeFi, pengguna bisa melakukan aktivitas seperti meminjam uang, memberikan pinjaman, berdagang aset, hingga mendapatkan bunga dari kripto—semua tanpa KYC (verifikasi identitas) dan bisa diakses hanya dengan dompet digital. DeFi biasanya dibangun di atas platform seperti Ethereum dan menggunakan smart contract untuk menjalankan aturan otomatis tanpa harus mempercayai pihak ketiga.</p>
+          
+          
+          <h1 class="text-white text-2xl font-semibold py-10">Cara Kerja Keuangan Terdesentralisasi (DeFi)</h1>
+          <p class="text-white pb-5">&emsp;Melalui jaringan keuangan peer-to-peer, DeFi menggunakan protokol keamanan, konektivitas, perangkat lunak, dan kemajuan perangkat keras. Sistem ini menghilangkan perantara seperti bank dan perusahaan jasa keuangan lainnya. Perusahaan-perusahaan ini mengenakan biaya kepada bisnis dan pelanggan untuk menggunakan layanan mereka, yang diperlukan dalam sistem saat ini karena itulah satu-satunya cara agar sistem ini berfungsi. DeFi menggunakan teknologi blockchain untuk mengurangi kebutuhan akan perantara ini.</p>
+          
+          <h1 class="text-white text-2xl font-semibold py-10">Aplikasi</h1>
+          <p class="text-white pb-5">&emsp;Aplikasi <strong class="text-violet-300 hover:text-violet-500">Defi</strong> dirancang untuk berkomunikasi dengan blockchain, yang memungkinkan orang menggunakan uang mereka untuk pembelian, pinjaman, hadiah, perdagangan, atau cara lain yang mereka inginkan tanpa pihak ketiga. Aplikasi ini adalah program yang diinstal pada perangkat seperti komputer pribadi, tablet, atau ponsel pintar yang memudahkan penggunaannya. Tanpa aplikasi, <strong class="text-violet-300 hover:text-violet-500">Defi</strong> akan tetap ada, tetapi pengguna harus merasa nyaman dan terbiasa menggunakan baris perintah atau terminal dalam sistem operasi yang menjalankan perangkat mereka. <br>
+            
+            &emsp;Aplikasi <strong class="text-violet-300 hover:text-violet-500">Defi</strong>  menyediakan antarmuka yang mengotomatiskan transaksi antar pengguna dengan memberi mereka pilihan finansial. Misalnya, jika Anda ingin memberikan pinjaman kepada seseorang dan mengenakan bunga, Anda dapat memilih opsi pada antarmuka dan memasukkan ketentuan seperti bunga atau agunan. Jika Anda membutuhkan pinjaman, Anda dapat mencari penyedia, yang dapat berupa bank hingga individu yang dapat meminjamkan Anda sejumlah mata uang kripto setelah Anda menyetujui ketentuannya.
+            <br>
+            &emsp;Beberapa aplikasi memungkinkan Anda memasukkan parameter untuk layanan yang Anda cari dan mencocokkan Anda dengan pengguna lain. Karena blockchain adalah jaringan global, Anda dapat memberikan atau menerima layanan keuangan ke atau dari mana saja di dunia.</p>
+            
+            <h1 class="text-white text-2xl font-semibold py-10">Tujuan Keuangan Terdesentralisasi</h1>
+            <p class="text-white pb-5">
+Transaksi keuangan peer-to-peer (P2P) adalah salah satu premis inti di balik DeFi, di mana dua pihak sepakat untuk menukar mata uang kripto dengan barang atau jasa tanpa melibatkan pihak ketiga. <br>
+
+Penggunaan DeFi memungkinkan untuk: <br>
+
+<strong class="bg-violet-500 rounded p-1">Aksesibilitas</strong> : Siapa pun yang memiliki koneksi internet dapat mengakses platform DeFi, dan transaksi terjadi tanpa batasan geografis. <br>
+ <strong class="bg-violet-500 rounded p-1">Biaya rendah dan suku bunga yang dapat dinegosiasikan</strong> : DeFi memungkinkan dua pihak untuk menegosiasikan suku bunga secara langsung dan meminjamkan mata uang kripto atau uang melalui jaringan DeFi. <br>
+ <strong class="bg-violet-500 rounded p-1">Keamanan dan Transparansi</strong> : Kontrak pintar yang dipublikasikan di blockchain dan catatan transaksi yang telah diselesaikan tersedia untuk ditinjau siapa saja, tetapi tidak mengungkapkan identitas Anda. Blockchain pada umumnya tidak dapat diubah, artinya tidak dapat diubah. <br>
+<strong class="bg-violet-500 rounded p-1">Otonomi </strong> : Platform DeFi tidak bergantung pada lembaga keuangan terpusat . Sifat protokol DeFi yang terdesentralisasi mengurangi kebutuhan dan biaya pengelolaan layanan keuangan.</p>
+
+<h1 class="text-white text-2xl font-semibold py-10">Cara Terlibat dalam DeFi</h1>
+<p class="text-white pb-5">&emsp; Terlibat dalam keuangan terdesentralisasi mungkin tampak menakutkan pada awalnya, tetapi ada banyak cara untuk melakukannya. Hal pertama yang harus Anda lakukan jika ingin terjun ke DeFi adalah meneliti aktivitas yang paling menarik minat Anda. Anda memerlukan dompet, tetapi karena ada begitu banyak pilihan, Anda perlu mempelajari lebih lanjut tentangnya dan menemukan yang menarik bagi Anda.
+  <br>&emsp;
+  Setelah Anda mengidentifikasi dompet dan aktivitas Anda, Anda dapat menemukan bursa bereputasi baik yang menyediakan aktivitas yang ingin Anda ikuti atau gunakan, membeli sejumlah mata uang kripto, dan memulai. Misalnya, jika Anda memilih Coinbase, Anda akan mengambil langkah-langkah berikut:
+  
+  - Siapkan dompet yang menerima aplikasi DeFi (Dompet Coinbase sudah menerima) <br>
+  - Tambahkan mata uang kripto ke dompet Anda dengan membeli beberapa di bursa <br>
+  - Temukan aplikasi DeFi untuk peminjaman, pinjaman, likuiditas, pertanian hasil, atau aktivitas lainnya <br>
+  - Tambahkan kripto Anda ke aplikasi untuk memulai</p>
+  
+  <h1 class="text-white text-2xl font-semibold py-10">Apa Contoh DeFi?</h1>&emsp;
+  
+  <p class="text-white pb-5">DeFi adalah istilah yang mencakup semua aplikasi yang menggunakan teknik atau teknologi blockchain dan mata uang kripto untuk menawarkan layanan keuangan. Beberapa aplikasi ini dapat menyediakan berbagai layanan mulai dari layanan dasar seperti rekening tabungan hingga layanan yang lebih canggih seperti menyediakan likuiditas bagi bisnis atau investor. Salah satu penyedia layanan DeFi yang terkenal adalah Aave, yang merupakan "protokol pasar likuiditas non-kustodian terdesentralisasi" yang memungkinkan siapa saja untuk berpartisipasi sebagai penyedia likuiditas atau peminjam.</p>
+  
+  
+  <h1 class="text-white text-2xl font-semibold py-10">Penggunaan Keuangan Terdesentralisasi</h1>&emsp;
+            
+            <p class="text-white pb-5">
+Keuangan terdesentralisasi, yang awalnya dianggap sebagai cara untuk menyediakan layanan keuangan seperti pinjaman dan perbankan bagi mereka yang tidak memiliki akses ke layanan tersebut , telah berubah menjadi industri tempat Anda dapat berpartisipasi dalam berbagai sektor atau usaha. Berikut ini beberapa yang paling populer:
+
+Bursa terdesentralisasi : Pilihan utama bagi pengguna aplikasi defi adalah mengakses bursa terdesentralisasi. Bursa seperti Uniswap dan PancakeSwap memiliki aplikasi yang memungkinkan Anda berinteraksi dengan pengguna mata uang kripto lainnya.
+Penyedia likuiditas : Likuiditas adalah kemampuan untuk menjual aset dengan cepat, masalah yang dialami banyak pengguna mata uang kripto. Penyedia likuiditas umumnya berupa kumpulan tempat pengguna menempatkan dana sehingga bursa dapat menyediakan peluang penjualan bagi penggunanya.
+2
+3
+Peminjaman/Pertanian Hasil: Ada ratusan aplikasi defi yang menyediakan pinjaman. Umumnya, aplikasi ini beroperasi dengan cara yang sama seperti kumpulan likuiditas, di mana pengguna mengunci dana mereka dalam kumpulan dan membiarkan orang lain meminjamnya, menerima bunga atas pinjaman mereka—disebut pertanian hasil. Banyak yang menyediakan pinjaman kilat, di mana tidak ada agunan yang diperlukan dari peminjam.
+Pasar Perjudian/Prediksi : Setiap hari, jutaan dolar dalam mata uang kripto digunakan dalam aplikasi perjudian dan prediksi DeFi seperti Polymarket, ZKasino, Slot Pacuan Kuda Keno Roulett, Azuro, dan JuicyBet.
+4
+Pasar prediksi adalah platform yang memungkinkan Anda memasang taruhan pada hasil hampir semua peristiwa.
+5
+NFT : Pasar token yang tidak dapat dipertukarkan telah agak mendingin, tetapi masih populer di kalangan investor dan kolektor khusus.</p>
+            
+
     <a href="https://indodax.com/academy/crypto-vs-defi/" class="text-white bg-slate-600 p-3 rounded hover:bg-slate-800 hover:text-violet-300">Baca Selengkapnya -></a>    </div>
 
     </div>
+    <!-- Button  -->
+     <button id="backToTopBtn"
+  onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+  class="hidden fixed bottom-6 right-6 bg-yellow-300 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded-full shadow-lg z-50 transition-opacity duration-300">
+  Balik Ke atas
+</button>
   </body>
 </html>
